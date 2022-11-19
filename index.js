@@ -49,6 +49,7 @@ app.all("*", (req, res) => {
 });
 
 const PORT = 3000;
+console.log(process.env.PORT);
 app.listen(process.env.PORT, () => {
   console.log("Server is on fire 🔥 on port " + PORT);
 });
